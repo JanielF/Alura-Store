@@ -1,35 +1,37 @@
-#Analisis Detallado de Resultados
+# 📊 Análisis Detallado de Resultados
 
-**Importante:**:  Los datos proporcionados por el Sr. Juan son integros y cumplen con las condiciones minimas para su procesamiento.
-
-###Estructura de los datos propocionados
-
--**Producto**	
--**Categoría del Producto**
--**Precio**
--**Costo de envío**
--**Fecha de Compra	
--**Vendedor**
--**Lugar de Compra**	
--**Calificación**
--**Método de pago**
--**Cantidad de cuotas**
--**lat**
--**lon**
-
-**💻💻Esta es la estructura con la que se pudo trabajar para obtener este analisis**
-
+**Importante:** Los datos proporcionados por el Sr. Juan son íntegros y cumplen con las condiciones mínimas para su procesamiento.
 
 ---
 
-***Ingresos totales de las tiendas***
+## 🗂️ Estructura de los datos proporcionados
 
- **Ingresos de la Tienda 1: $1,150,880,400.00**
+- **Producto**  
+- **Categoría del Producto**  
+- **Precio**  
+- **Costo de envío**  
+- **Fecha de Compra**  
+- **Vendedor**  
+- **Lugar de Compra**  
+- **Calificación**  
+- **Método de pago**  
+- **Cantidad de cuotas**  
+- **Latitud (`lat`)**  
+- **Longitud (`lon`)**
 
- **Ingresos de la Tienda 2: $1,116,343,500.00**
+> 💻 Esta es la estructura con la que se pudo trabajar para obtener este análisis.
 
- **Ingresos de la Tienda 3: $1,098,019,600.00**
+---
 
- **Ingresos de la Tienda 4: $1,038,375,700.00**
+## 💰 Ingresos totales de las tiendas
 
-[Grafico de los ingresos totales de las tiendas: ](ingresos_totales_tiendas.png)
+- **Tienda 1**: `$1,150,880,400.00`  
+- **Tienda 2**: `$1,116,343,500.00`  
+- **Tienda 3**: `$1,098,019,600.00`  
+- **Tienda 4**: `$1,038,375,700.00`  
+
+---
+
+### 📈 Gráfico de los ingresos totales por tienda
+
+![Ingresos totales por tienda](Grafico/ingresos_totales_tiendas.png)
