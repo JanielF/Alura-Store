@@ -62,9 +62,6 @@ for i, t in enumerate(tiendas_completas, 1):
 #Ingresos de las tiendas en grafico
 
 # Datos
-
-import matplotlib.pyplot as plt
-
 # Crear carpeta "Graficos" si no existe
 if not os.path.exists("Graficos"):
     os.makedirs("Graficos")
