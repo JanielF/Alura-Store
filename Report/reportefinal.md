@@ -32,7 +32,7 @@
 - **Tienda 4**: `$1,038,375,700.00`  
 
 ### 📈 Gráfico: Ingresos totales por tienda
-![Ingresos totales por tienda](Grafico/ingresos_totales_tiendas.png)
+![Ingresos totales por tienda](ingresos_totales_tiendas.png)
 
 Como podemos observar, los números hablan por sí solos: la tienda con más ventas fue la **Tienda #1**, mientras que la **Tienda #4** fue la que menos vendió.
 
@@ -63,7 +63,7 @@ Sin embargo, esto **no significa necesariamente** que la Tienda 1 sea la mejor o
 - 🧸 **Juguetes**: 338 productos vendidos — `$20,262,200`  
 
 ### 📊 Gráfico: Categorías más vendidas por tienda
-![Categorías más vendidas por tienda](Grafico/productos_vendidos_por_categoria.png)
+![Categorías más vendidas por tienda](productos_vendidos_por_categoria.png)
 
 Se observa que los productos más vendidos en general fueron **Muebles** y **Electrónicos**, seguidos por **Juguetes** y **Electrodomésticos**.
 
@@ -83,7 +83,7 @@ La satisfacción de los clientes se evaluó mediante la calificación media regi
 > Las tiendas mejor valoradas fueron **Tienda 2** y **Tienda 3**, ambas con una puntuación superior a `4.03`.
 
 ### 🌟 Gráfico: Valoración media por tienda
-![Valoración media de las tiendas](Grafico/valoracion_media_tiendas.png)
+![Valoración media de las tiendas](valoracion_media_tiendas.png)
 
 ---
 
