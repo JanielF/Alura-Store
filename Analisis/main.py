@@ -1,6 +1,7 @@
 #Importación de datos
 import pandas as pd
 from matplotlib import pyplot as plt
+import os
 
 
 url = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science-latam/refs/heads/main/base-de-datos-challenge1-latam/tienda_1%20.csv"
@@ -61,10 +62,16 @@ for i, t in enumerate(tiendas_completas, 1):
 #Ingresos de las tiendas en grafico
 
 # Datos
+
+import matplotlib.pyplot as plt
+
+# Crear carpeta "Graficos" si no existe
+if not os.path.exists("Graficos"):
+    os.makedirs("Graficos")
+
+# Datos
 x = ["Tienda 1", "Tienda 2", "Tienda 3", "Tienda 4"]
 y = [tienda["Precio"].sum(), tienda2["Precio"].sum(), tienda3["Precio"].sum(), tienda4["Precio"].sum()]
-
-# Colores personalizados
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
 
 # Crear gráfico
@@ -76,7 +83,7 @@ ax.set_title("Ingresos totales por tienda (2020–2023)", fontsize=16, fontweigh
 ax.set_xlabel("Tiendas", fontsize=12)
 ax.set_ylabel("Ingresos totales", fontsize=12)
 
-# Etiquetas encima de cada barra con formato
+# Etiquetas encima de cada barra
 for bar in bars:
     yval = bar.get_height()
     ax.text(bar.get_x() + bar.get_width()/2, yval + 1e7, 
@@ -89,14 +96,24 @@ ax.set_axisbelow(True)
 # Rotación de etiquetas
 plt.xticks(rotation=0)
 
-# Ajuste del layout
+# Ajuste visual
 plt.tight_layout()
-plt.show()
 
+# Guardar gráfico en carpeta "Graficos"
+plt.savefig("Graficos/ingresos_totales_tiendas.png", dpi=300, bbox_inches='tight')
+
+# Mostrar gráfico
+plt.show()
 
 #Valoracion media por tienda en grafico
 
 # Paso 1: Crear los datos
+
+# Crear carpeta "Graficos" si no existe
+if not os.path.exists("Graficos"):
+    os.makedirs("Graficos")
+
+# Datos
 x1 = ["Tienda 1", "Tienda 2", "Tienda 3", "Tienda 4"]
 y1 = [
     tienda["Calificación"].mean(),
@@ -105,30 +122,37 @@ y1 = [
     tienda4["Calificación"].mean()
 ]
 
-# Paso 2: Colores personalizados para el pastel
+# Colores personalizados
 colors1 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
 
-# Paso 3: Crear el gráfico de pastel
+# Crear gráfico de pastel
 fig, ax = plt.subplots(figsize=(8, 8))
 ax.pie(
-    y1,                      # Valores: calificaciones promedio
-    labels=x1,               # Etiquetas: nombres de tiendas
-    colors=colors1,          # Colores personalizados
-    autopct="%1.1f%%",       # Mostrar porcentajes con 1 decimal
-    startangle=90,           # Empieza desde arriba (rotación)
-    shadow=True              # Sombra para efecto visual
+    y1,
+    labels=x1,
+    colors=colors1,
+    autopct="%1.1f%%",
+    startangle=90,
+    shadow=True
 )
 
-# Paso 4: Título del gráfico
+# Título
 ax.set_title("Valoración media por tienda (2020–2023)", fontsize=16, fontweight='bold')
 
-# Paso 5: Mostrar el gráfico
+# Ajuste del layout
 plt.tight_layout()
+
+# Guardar el gráfico en carpeta "Graficos"
+plt.savefig("Graficos/valoracion_media_tiendas.png", dpi=300, bbox_inches='tight')
+
+# Mostrar el gráfico
 plt.show()
+
 
 #categoria mas vendida por tienda en grafico horizontal bar
 
 # Datos
+
 # 1. Contar productos por categoría para cada tienda
 ventas1 = tienda["Categoría del Producto"].value_counts()
 ventas2 = tienda2["Categoría del Producto"].value_counts()
@@ -153,16 +177,23 @@ ventas_df = ventas_df.sort_values("Total", ascending=False)
 # 5. Eliminar la columna de total (solo era para ordenar)
 ventas_df.drop(columns="Total", inplace=True)
 
-# 6. Crear gráfico de barras horizontales apiladas
-colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
+# 6. Crear carpeta "Graficos" si no existe
+if not os.path.exists("Graficos"):
+    os.makedirs("Graficos")
 
+# 7. Crear gráfico de barras horizontales apiladas
+colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
 ventas_df.plot(kind='barh', stacked=True, color=colors, figsize=(10, 6))
 
-# 7. Personalización
+# 8. Personalización
 plt.title("Productos vendidos por categoría y tienda", fontsize=16, fontweight="bold")
 plt.xlabel("Productos vendidos")
 plt.ylabel("Categorías")
 plt.legend(title="Tiendas", loc="upper right")
 plt.tight_layout()
 
+# 9. Guardar gráfico en la carpeta
+plt.savefig("Graficos/productos_vendidos_por_categoria.png", dpi=300, bbox_inches='tight')
+
+# 10. Mostrar gráfico
 plt.show()
