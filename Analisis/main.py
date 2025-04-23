@@ -100,7 +100,7 @@ plt.xticks(rotation=0)
 plt.tight_layout()
 
 # Guardar gráfico en carpeta "Graficos"
-plt.savefig("Graficos/ingresos_totales_tiendas.png", dpi=300, bbox_inches='tight')
+plt.savefig("Report/ingresos_totales_tiendas.png", dpi=300, bbox_inches='tight')
 
 # Mostrar gráfico
 plt.show()
@@ -143,7 +143,7 @@ ax.set_title("Valoración media por tienda (2020–2023)", fontsize=16, fontweig
 plt.tight_layout()
 
 # Guardar el gráfico en carpeta "Graficos"
-plt.savefig("Graficos/valoracion_media_tiendas.png", dpi=300, bbox_inches='tight')
+plt.savefig("Report/valoracion_media_tiendas.png", dpi=300, bbox_inches='tight')
 
 # Mostrar el gráfico
 plt.show()
@@ -193,7 +193,7 @@ plt.legend(title="Tiendas", loc="upper right")
 plt.tight_layout()
 
 # 9. Guardar gráfico en la carpeta
-plt.savefig("Graficos/productos_vendidos_por_categoria.png", dpi=300, bbox_inches='tight')
+plt.savefig("Report/productos_vendidos_por_categoria.png", dpi=300, bbox_inches='tight')
 
 # 10. Mostrar gráfico
 plt.show()

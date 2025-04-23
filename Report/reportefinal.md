@@ -34,4 +34,4 @@
 
 ### 📈 Gráfico de los ingresos totales por tienda
 
-![Ingresos totales por tienda](Graficos/ingresos_totales_tiendas.png)
+![Ingresos totales por tienda](ingresos_totales_tiendas.png)
