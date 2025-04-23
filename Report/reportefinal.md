@@ -165,3 +165,25 @@ Balón de voleibol           48
 Juego de mesa               48
 Microondas                  48
 ```
+
+## ✅ Recomendación Final
+
+Tras analizar en profundidad los aspectos clave del rendimiento de cada tienda, se concluye que **la Tienda 1, a pesar de ser la que genera mayores ingresos totales, no es la opción más eficiente ni sostenible a largo plazo**.
+
+### ❌ Motivos para desestimar la Tienda 1:
+
+- 📉 **Calificación promedio baja**: Indica una insatisfacción generalizada por parte de los clientes, lo cual afecta directamente la fidelidad y la reputación de la tienda.
+
+- 🚚 **Altos costos de envío**: Esto impacta negativamente en los márgenes de ganancia y la competitividad frente a las otras tiendas.
+
+- 🛍️ **Bajo interés en productos clave**: La tienda muestra un rendimiento débil en varias categorías importantes, reduciendo su potencial de crecimiento.
+
+- 📉 **Tendencia de ventas a la baja**: Se observa una caída sostenida en las ventas durante el período analizado, lo cual refuerza la decisión.
+
+---
+
+### ✅ Recomendación:
+
+Se recomienda **vender la Tienda 1** y enfocar los esfuerzos en evaluar con mayor detalle las tiendas restantes (especialmente la Tienda 4, por su rendimiento balanceado) para futuras estrategias de inversión.
+
+---
