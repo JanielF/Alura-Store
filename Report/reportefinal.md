@@ -32,4 +32,4 @@
 
  **Ingresos de la Tienda 4: $1,038,375,700.00**
 
-[Grafico de los ingresos totales de las tiendas: ](Graficos/ingresos_totales_tiendas.png)
+[Grafico de los ingresos totales de las tiendas: ](ingresos_totales_tiendas.png)
